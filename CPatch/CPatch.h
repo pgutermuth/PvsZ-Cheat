@@ -3,7 +3,8 @@
 #include <Windows.h>
 #include <cstdint>
 
-class CPatch {
+class CPatch 
+{
 public:
 	bool PatchByte( const byte &newByte, const std::uintptr_t &Address = 0 );
 };
