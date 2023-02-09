@@ -5,12 +5,10 @@
 #include <cstdint>
 
 struct DllInfo {
-
 	std::uintptr_t base = 0, size = 0;
 };
 
-class CCheat {
-	
+class CCheat {	
 public:
 
 	void patchMoneyAdd();
@@ -31,5 +29,4 @@ public:
 
 	static void Action();
 };
-
 extern CCheat* g_pCheat;

@@ -5,7 +5,6 @@
 #include <cstdint>
 
 namespace Offsets {
-
 	constexpr std::uintptr_t add_opcode_offset  = 0x1F4D0;	// popcapgame1.exe + 1F4D0    - 01 80 78550000				- add [eax+00005578],eax
 
 	constexpr std::uintptr_t move_opcode_offset = 0x1F636;	// popcapgame1.exe + 1F636    - 89 BF 78550000				- mov [edi+00005578],edi
