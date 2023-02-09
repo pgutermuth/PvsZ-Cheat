@@ -1,28 +1,23 @@
 #pragma once
 
 #include <Windows.h>
-
 #include <cstdint>
 
-struct DllInfo {
+struct DllInfo 
+{
 	std::uintptr_t base = 0, size = 0;
 };
 
-class CCheat {	
+class CCheat 
+{	
 public:
 
 	void patchMoneyAdd();
-
 	void patchMoneyMove();
-
 	void patchMoneyMaximum();
-
 	void patchShopMoney();
-
 	void patchMoneyValueByDrop();
-
 	void patchPlantCooldown();
-
 	bool loadDllInfo();
 
 	static DllInfo* pProcess;
